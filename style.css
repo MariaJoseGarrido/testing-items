@@ -1,0 +1,96 @@
+ .button-home{
+  background: #48b334;  
+  color:#ffff;
+  border-radius: 8px;
+  padding: 8px 40px 8px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border:none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  -moz-box-shadow: 3px 3px 3px 0px rgbad(185, 183, 183, 0.75);
+  box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  height: 40px ;
+  width: 350px;
+  margin:30px 30px 30px 0;
+ }
+
+ .button-home-2{
+  background: #ffffff;  
+  color:#48b334;
+  border-radius: 8px;
+  padding: 8px 40px 8px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border:1px solid #48b334;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  height: 40px ;
+  width: 350px;
+  margin:30px 30px 30px 0;
+ }
+
+ .button-home-3{
+  background: #ffffff;  
+  color:#48b334;
+  border-radius: 8px;
+  padding: 8px 40px 8px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border:1px solid #48b334;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  height: 40px ;
+  width: 350px;
+  margin:30px 30px 30px 0;
+ }
+
+ .button-home-2:hover, .button-home-3:hover{
+  background: #48b334;
+  color:#ffff;
+}
+
+.button-home:hover{
+  background: #225719;
+  color:#ffff;
+}
+
+.fas.hover{
+  color: #48b334;
+}
+
+
+
+/*  original
+background-color: #1e88e5;
+   border-color: #026db8;
+   color: white !important;
+   text-shadow: none !important; */
+
+#pane {
+	position: absolute;
+	z-index: 99;
+  border: 1px solid #48b334;
+  border-radius: 8px;
+  background: #ffffff;  
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
+  height: 44px ;
+  width: 350px;
+}
+
+#title {
+  background: #fff;  
+  color:#48b334;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 0 40px 8px 40px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
