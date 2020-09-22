@@ -1,93 +1,114 @@
 <!DOCTYPE html>
+<html class="menu">
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-  <title>Testing Items</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google" value="notranslate" />
+    <title>Side Menu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>    
 </head>
 
 <body>
-   <!--PRIMERA OPCION-->
-  <!-- <div class="container">
-      <div class="d-flex justify-content-between mt-5">
-          <div class="row">
-              <div class="col-2">
-                <a href=""><i class="fas fa-plus-circle"></i></a>  
-              </div>
-              <div class="col-2">
-                <a href=""><i class="fas fa-filter"></i></a>
-              </div>
-              <div class="col-8">
-                  <p>Selecionar Filtros</p>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-3">
-                <a href=""><i class="fas fa-redo-alt"></i></a>
-              </div>
-              <div class="col-3">
-                <a href=""><i class="fas fa-columns"></i></a>
-              </div>
-              <div class="col-3">
-                <a href=""><i class="fas fa-download"></i></a>
-              </div>
-              <div class="col-3">
-                <a href=""><i class="fas fa-ellipsis-v"></i></a>
-              </div>
-          </div>
-      </div>
-  </div> -->
+            <header class="header">
+                <div class="main-logo"> <img class="logo-img" src="logo.png"></div>
+                <div class="main-title"><p>RALÚN ● Plataforma Inmobiliaria</p></div>
+            </header>
 
-  <!--LETRAS AL LADO-->
-  <!-- <div class="container">
-    <div class="d-flex justify-content-between mt-2">
-      <div class="row">
-        <div class="col-12"><p class="title">Acciones</p></div>
-        <div class="col-0">
-          <a href=""><i class="fas fa-plus-circle"></i></a>
-        </div>
-        <div class="col-2"><p>Agregar contenido</p></div>
-        <div class="col-0">
-          <a href=""><i class="fas fa-redo-alt"></i></a>
-        </div>
-        <div class="col-2"><p>Refrescar Tabla</p></div>
-        <div class="col-0">
-          <a href=""><i class="fas fa-download"></i></a>
-        </div>
-        <div class="col-2"><p>Descargar Tabla</p></div>
-      </div>
+
+    <nav class="main-menu">
+        <div id="style-1">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home fa-lg"></i>
+                        <span class="nav-text main-access">Acceso Intranet Ralún</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="menu-drop">
+                        <nav>
+                <li>
+                    <a class="drop" href="#" title="Administración de contenidos">
+                        <i class="fas fa-caret-down"></i>
+                        <span class="nav-text">Administración de Contenidos</span>
+                    </a>
+                    <ul>
+                        <li><a class="drop" href="#"><span class="nav-text text-center" style="height:20px;background-color:#a3a0a0;">Búsqueda avanzada de proyectos</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center border-left">Búsqueda avanzada de sociedades</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda avanzada de inversionistas</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda avanzada de parcelas</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Carga de ubicación de parcelas</span></a></li>                    </ul>
+                </li>
+                <li>
+                    <a class="drop" href="#">
+                        <i class="fas fa-caret-down"></i>
+                        <span class="nav-text">Búsqueda y consulta de Proyectos y Parcelas</span>
+                    </a>
+                    <ul>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda y consulta de proyectos activos</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda avanzada de parcelas</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda avanzada de mis E-Tickets</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="drop" href="#">
+                        <i class="fas fa-caret-down"></i>
+                        <span class="nav-text">Portal de Gestión</span>
+                    </a>
+                    <ul>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Gestión Comercial</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda avanzada de gestión comercial</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Gestion legal</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda avanzada de gestión legal</span></a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a class="drop" href="#" >
+                        <i class="fas fa-caret-down"></i>
+                        <span class="nav-text">Servicio al Cliente</span>
+                    </a>
+                    <ul>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda avanzada de E-Ticket</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda avanzada de clientes</span></a></li>
+                        <li><a class="drop" href="#"><span class="nav-text text-center">Búsqueda avanzada de ingresos</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="drop" href="javascript:redir('ps_portal_id=202')">
+                        <i class="fas fa-caret-down"></i>
+                        <span class="nav-text">Biblioteca Virtual</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="drop" href="javascript:redir('ps_portal_id=203')">
+                        <i class="fas fa-caret-down"></i>
+                        <span class="nav-text">Gestión de Publicaciones</span>
+                    </a>
+                </li>
+    </nav>
     </div>
-  </div> -->
+    </li>
 
-  <div class="container">
-    <div class="d-flex justify-content-center mt-2">
-      <div class="row">
-        <div class="col-12"><p class="title">Acciones</p></div>
-        <div class="col-2">
-          <a href=""><i class="fas fa-plus-circle"></i></a>
-          <div class="col-2"><p class="description">Agregar contenido</p></div>
-        </div>
-        <div class="col-2">
-          <a href=""><i class="fas fa-redo-alt"></i></a>
-          <div class="col-2"><p class="description">Refrescar Tabla</p></div>
-        </div>
-        <div class="col-2">
-          <a href=""><i class="fas fa-download"></i></a>
-          <div class="col-2"><p class="description">Descargar Tabla</p></div>
-        </div>
-      </div>
+    </ul>
     </div>
-  </div>
+    </nav>
 
 
-  <!-- CSS only -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <script type="module" src="index.js"></script>
 </body>
 
 </html>
+
+
