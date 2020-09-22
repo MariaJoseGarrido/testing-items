@@ -1,96 +1,191 @@
- .button-home{
-  background: #48b334;  
-  color:#ffff;
-  border-radius: 8px;
-  padding: 8px 40px 8px 40px;
-  font-size: 16px;
-  cursor: pointer;
-  border:none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  -webkit-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  -moz-box-shadow: 3px 3px 3px 0px rgbad(185, 183, 183, 0.75);
-  box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  height: 40px ;
-  width: 350px;
-  margin:30px 30px 30px 0;
- }
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
- .button-home-2{
-  background: #ffffff;  
-  color:#48b334;
-  border-radius: 8px;
-  padding: 8px 40px 8px 40px;
-  font-size: 16px;
-  cursor: pointer;
-  border:1px solid #48b334;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  -webkit-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  -moz-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  height: 40px ;
-  width: 350px;
-  margin:30px 30px 30px 0;
- }
 
- .button-home-3{
-  background: #ffffff;  
-  color:#48b334;
-  border-radius: 8px;
-  padding: 8px 40px 8px 40px;
-  font-size: 16px;
-  cursor: pointer;
-  border:1px solid #48b334;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  -webkit-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  -moz-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  height: 40px ;
-  width: 350px;
-  margin:30px 30px 30px 0;
- }
-
- .button-home-2:hover, .button-home-3:hover{
-  background: #48b334;
-  color:#ffff;
+body{
+    margin:0px;
+    padding:0px;
+    color:#fff;
+    font-weight:300;
 }
 
-.button-home:hover{
-  background: #225719;
-  color:#ffff;
+/*HEADER*/
+.header{
+  background-color: black;
+  height: 65px;
+  position: relative;
+  display: flex;
+  width: 100%;
 }
 
-.fas.hover{
-  color: #48b334;
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+  color: #fff !important; 
+  text-shadow: none !important;
 }
 
-
-
-/*  original
-background-color: #1e88e5;
-   border-color: #026db8;
-   color: white !important;
-   text-shadow: none !important; */
-
-#pane {
-	position: absolute;
-	z-index: 99;
-  border: 1px solid #48b334;
-  border-radius: 8px;
-  background: #ffffff;  
-  -webkit-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  -moz-box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  box-shadow: 3px 3px 3px 0px rgba(185, 183, 183, 0.75);
-  height: 44px ;
-  width: 350px;
+.logo-img{
+height:46px;
+margin: 10px 0 10px 10px;
+border-right: 1px solid #F7F7F7;
+padding-right: 110px;
 }
 
-#title {
-  background: #fff;  
-  color:#48b334;
-  font-size: 16px;
-  border-radius: 8px;
-  padding: 0 40px 8px 40px;
+.main-title{
+  height: 65px;
+  position: relative;
+  margin-left: 20px;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+p{
+  margin-top:11px;
+}
+
+/*HEADER*/
+
+
+/* ScrolBar  */
+
+
+.fa, .fas {
+    width: 20px;
+
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.main-menu:hover, nav.main-menu.expanded {
+    width:230px;
+    overflow:hidden;
+    opacity:1;
+}
+.main-menu {
+    background:#F7F7F7;
+    position:absolute;
+    bottom:0;
+    height:89%; /*considerar altura de prueba con la de idatum para configurar, dejar en 100%*/
+    left:0;
+    opacity:1;
+    border-right: 1px solid #000000;
+    margin-left: 5px;
+}
+
+.main-menu>ul {
+    margin:7px 0;
+}
+
+.main-menu li {
+    position:relative;
+    display:block;
+    width:230px;
+}
+
+.main-menu li>a {
+    position:relative;
+    width:230px;
+    display:table;
+    border-collapse:collapse;
+    border-spacing:0;
+    color:#000000 !important;
+    font-size: 14px;
+    text-decoration:none;
+    transition:all .14s linear;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-top:1px solid #f2f2f2;
+    
+}
+
+.border-left {
+  border-left: 10px solid red!important;
+}
+
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: .75em;
+  vertical-align: -.0667em;
+  margin-right: 10px;
+  color:#0A4C97;
+  font-size: 20px;
+  margin-top:5px;
+}
+
+.main-menu .nav-text  {
+  position:relative;
+  display:table-cell;
+  vertical-align:middle;
+  width:200px;
+  line-height: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left !important;
+  margin-left: 200px;
+}
+
+a:hover,a:focus {
+    text-decoration:none;
+    border-left:0px solid #F7F7F7;
+}
+nav {
+    user-select:none;
+}
+nav ul,nav li {
+    outline:0;
+    margin:0;
+    padding:0;
+}
+
+.text-center {
+  text-align: left !important;
+}
+
+.menu-drop {
+  width: 230px;
+  height: 100vh;
+  background: #F7F7F7;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color:#8a8a8a;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: backgorund 0.25s, color 0.25s;
+}
+
+.drop {
+  line-height: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 20px;
+  position: relative;
+}
+
+.drop:hover, .nav-text:hover {
+ background-color: rgba(211, 209, 209, 0.1);
+ color:rgba(46, 45, 45);
+}
+
+nav > ul > li > a:after {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+nav > ul > li:last-child a {
+  border-bottom: none;
+}
+
+ul ul a {
+  padding-left: 40px;
+  line-height: 40px;
+  text-transform: none;
+  font-size: 14px;
+}
